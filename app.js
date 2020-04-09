@@ -8,5 +8,7 @@ app.use(async (ctx, next) => {
   console.log(`${ctx.method} ${ctx.url} - ${ms}ms`);
 });
 app.use(router.routes())
-app.listen(3001);
+app.listen(3001,()=>{
+  console.log('打开了3001 :');
+});
 
